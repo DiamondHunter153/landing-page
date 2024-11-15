@@ -1,67 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liberty Wealth Planners - Welcome Page</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #007bff;
-            padding: 1rem;
-            text-align: center;
-            color: #fff;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #007bff;
-            padding: 1rem;
-            text-align: center;
-            color: #fff;
-        }
-    </style>
+    <title>Liberty Wealth Planners</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
     <header>
-        <h1>Welcome to Liberty Wealth Planners</h1>
+        <div class="container">
+            <h1>Liberty Wealth Planners</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <section>
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec varius quam. Proin cursus erat ut dui
-            fermentum, vel feugiat sapien malesuada.</p>
-        <p>Our enterprise is dedicated to providing innovative solutions for your business needs.</p>
-    </section>
-
-    <section>
-        <h2>Meet the Developer</h2>
-        <p>This website was developed by John Ellerbee, a skilled and experienced developer passionate about creating
-            effective and user-friendly web solutions.</p>
-        <p>John Ellerbee has a proven track record in delivering high-quality software and is committed to excellence in
-            every project.</p>
-    </section>
-
+    <main>
+        <section id="about" class="container">
+            <h2>À propos de nous</h2>
+            <p>Liberty Wealth Planners est une société de conseil financier dédiée à vous aider à atteindre vos objectifs financiers.</p>
+        </section>
+        <section id="services" class="container">
+            <h2>Nos Services</h2>
+            <ul>
+                <li>Planification financière</li>
+                <li>Gestion de patrimoine</li>
+                <li>Conseil en investissement</li>
+            </ul>
+        </section>
+        <section id="contact" class="container">
+            <h2>Contactez-nous</h2>
+            <p>Pour plus d'informations, veuillez nous contacter à <a href="mailto:info@libertywealthplanners.com">info@libertywealthplanners.com</a>.</p>
+            <form>
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2023 Liberty Wealth Planners | Website by John Ellerbee</p>
+        <div class="container">
+            <p>&copy; 2024 Liberty Wealth Planners. Tous droits réservés.</p>
+        </div>
     </footer>
 </body>
-
 </html>
